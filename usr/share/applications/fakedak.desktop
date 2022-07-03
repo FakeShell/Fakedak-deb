@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Fakedak
+Exec=fakedak
+Icon=/usr/share/icons/fakedak.png
+Terminal=false
+Type=Application
