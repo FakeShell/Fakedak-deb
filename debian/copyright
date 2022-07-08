@@ -1,6 +1,6 @@
-Format: https://fakedak.co
+Format: https://github.com/BardiaMGTGC/fakedak-deb.git
 Upstream-Name: fakedak
-Source: https://fakedak.co
+Source: https://github.com/BardiaMGTGC/fakedak-deb.git
 
 Files: *
 Copyright: 2022 Bardia Moshiri <fakeshell@bardia.tech>
