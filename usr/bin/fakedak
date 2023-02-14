@@ -1,2 +1,16 @@
 #!/bin/bash
-python3 /usr/lib/fakedak/fakedak
+
+FAKEDAK_PATH="/usr/lib/fakedak/fakedak"
+
+# Check if the app exists
+if [ ! -f "$APP_PATH" ]; then
+  echo "Error: The app does not exist at $APP_PATH"
+  exit 1
+fi
+
+python3 "$FAKEDAK_PATH"
+
+if [ $? -ne 0 ]; then
+  echo "Error: The app failed to launch"
+  exit 1
+fi

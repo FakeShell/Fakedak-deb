@@ -2,8 +2,19 @@ import eel
 
 eel.init('/usr/lib/fakedak/web')
 
+# Define the exposed function that will be called from JavaScript
 @eel.expose
 def App():
     print('running')
 
-eel.start('index.html', size=(380,630), port=13372)
+try:
+    eel.start('index.html', size=(380, 630), port=13372, cache_max_age=60*60*24*7, host_reuse_enabled=True, icon='/usr/lib/fakedak/web/logo.png', title='Fakedak', package_name='com.fakedak')
+except (SystemExit, KeyboardInterrupt):
+    # Gracefully handle user interruptions
+    pass
+finally:
+    try:
+        eel.stop()
+    except AttributeError:
+        # Gracefully handle the case where eel.stop() isn't found
+        pass

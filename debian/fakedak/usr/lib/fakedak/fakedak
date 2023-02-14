@@ -1,9 +1,0 @@
-import eel
-
-eel.init('/usr/lib/fakedak/web')
-
-@eel.expose
-def App():
-    print('running')
-
-eel.start('index.html', size=(380,630), port=13372)

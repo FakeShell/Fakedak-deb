@@ -1,6 +1,6 @@
-fakedak (1.0.0) main; urgency=medium
+fakedak (1.1.0) main; urgency=medium
 
-  * first commit
+  * add exception handling
 
- -- fakeshell <fakeshell@bardia.tech>  Fri, 15 Apr 2022 14:27:36 +0500
+ -- fakeshell <fakeshell@bardia.tech>  Wed, 15 Feb 2023 03:02:36 +0330
 
